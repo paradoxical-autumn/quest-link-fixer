@@ -5,7 +5,7 @@ import os, ctypes, sys, platform
 uname = platform.uname()
 
 banner = rf"""
-      .o.                       .                                                Oculus Link White Bar Fixer
+      .o.                       .                                                Meta Link White Bar Fixer
      .888.                    .o8                                                © Autumn 2023
     .8"888.     oooo  oooo  .o888oo oooo  oooo  ooo. .oo.  .oo.   ooo. .oo.      written in:     Python 3.11.3
    .8' `888.    `888  `888    888   `888  `888  `888P"Y88bP"Y88b  `888P"Y88b     running on:     {uname.machine} {uname.system} {uname.release}
@@ -33,6 +33,9 @@ __          __     _____  _   _ _____ _   _  _____
     os.system('reg add "HKEY_CURRENT_USER\SOFTWARE\Oculus\RemoteHeadset" /v "numSlices" /t REG_DWORD /d "1" /f')
     print("done'd")
     input("[ Press RETURN to EXIT. . . ]")
+
+# set the window title
+os.system("title Meta Link White Bar Fixer")
 
 # create a function for checking if the user is an admin.
 def is_admin():
