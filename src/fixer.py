@@ -1,5 +1,5 @@
 # all base python imports
-import os, ctypes, sys, platform
+import os, ctypes, sys, platform, subprocess
 
 # get the uname, just for debugging.
 uname = platform.uname()
@@ -32,7 +32,13 @@ __          __     _____  _   _ _____ _   _  _____
     print("only run this script once! it is also advised you make a system restore point before running!")
     input("[ Press RETURN to CONTINUE. . . ]")
     os.system('reg add "HKEY_CURRENT_USER\SOFTWARE\Oculus\RemoteHeadset" /v "numSlices" /t REG_DWORD /d "1" /f')
-    print("Done.\n\nYou can verify the changes worked by running \"reg query HKCU\SOFTWARE\Oculus\RemoteHeadset /v numSlices\" in a terminal\nThe output should be as follows:\nHKEY_CURRENT_USER\SOFTWARE\Oculus\RemoteHeadset\n    numSlices    REG_DWORD    0x1\n\n")
+    print("Done.")
+    print("Verifying...")
+    registryResponse = os.system("reg query HKCU\SOFTWARE\Oculus\RemoteHeadset /v numSlices")
+    if registryResponse == 0:
+        print("Checks passed!")
+    else:
+        print("Error! Key writing failed!")
     input("[ Press RETURN to EXIT. . . ]")
 
 # set the window title
