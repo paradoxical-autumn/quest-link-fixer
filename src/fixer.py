@@ -1,6 +1,3 @@
-"""
-
-"""
 # all base python imports
 import os, ctypes, sys, platform
 
