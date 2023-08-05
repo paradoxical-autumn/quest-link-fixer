@@ -5,6 +5,7 @@ import os, ctypes, sys, platform
 uname = platform.uname()
 
 banner = rf"""
+a script by...
       .o.                       .                                                Meta Link White Bar Fixer
      .888.                    .o8                                                © Autumn 2023
     .8"888.     oooo  oooo  .o888oo oooo  oooo  ooo. .oo.  .oo.   ooo. .oo.      written in:     Python 3.11.3
