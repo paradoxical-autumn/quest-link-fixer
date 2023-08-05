@@ -29,7 +29,7 @@ __          __     _____  _   _ _____ _   _  _____
    \  /\  / ____ \| | \ \| |\  |_| |_| |\  | |__| |
     \/  \/_/    \_\_|  \_\_| \_|_____|_| \_|\_____|
 """)
-    print("only run this script once! it is also advised you make a system restore point before running!")
+    print("it is advised you make a system restore point before running!")
     input("[ Press RETURN to CONTINUE. . . ]")
     os.system('reg add "HKEY_CURRENT_USER\SOFTWARE\Oculus\RemoteHeadset" /v "numSlices" /t REG_DWORD /d "1" /f')
     print("Done.")
