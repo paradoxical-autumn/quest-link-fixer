@@ -7,7 +7,7 @@ uname = platform.uname()
 banner = rf"""
 a script by...
       .o.                       .                                                Meta Link White Bar Fixer
-     .888.                    .o8                                                © Autumn 2023
+     .888.                    .o8                                                © 2023,         Autumn - MIT License
     .8"888.     oooo  oooo  .o888oo oooo  oooo  ooo. .oo.  .oo.   ooo. .oo.      written in:     Python 3.11.3
    .8' `888.    `888  `888    888   `888  `888  `888P"Y88bP"Y88b  `888P"Y88b     running on:     {uname.machine} {uname.system} {uname.release}
   .88ooo8888.    888   888    888    888   888   888   888   888   888   888     installed at:   <** REDACTED **>
