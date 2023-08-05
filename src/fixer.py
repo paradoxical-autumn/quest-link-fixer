@@ -1,5 +1,5 @@
 # all base python imports
-import os, ctypes, sys, platform, subprocess
+import os, ctypes, sys, platform
 
 # get the uname, just for debugging.
 uname = platform.uname()
