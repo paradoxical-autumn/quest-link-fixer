@@ -1,8 +1,9 @@
-# meta-link-fixer
-An app used for fixing the white bar on Meta Quest Link.
+<h1 align="center">meta-link-fixer</h1>
+<p align="center">An app used for fixing the white bar when using Meta Quest Link.</p>
 
 ## About
-This app fixes that annoying white bar that appears when using quest link on a meta headset since meta isn't gonna fix it themselves.
+This app fixes that annoying white bar that appears when using quest link on a meta headset since meta isn't gonna fix it themselves.<br/>
+Note: This bug does not affect air link due to that using a different encoder.
 
 ## Download
 ### GitHub (Recommended)
