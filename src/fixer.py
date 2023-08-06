@@ -35,11 +35,34 @@ __          __     _____  _   _ _____ _   _  _____
     print("Done.")
     print("Verifying...")
     registryResponse = os.system("reg query HKCU\SOFTWARE\Oculus\RemoteHeadset /v numSlices")
+
+    errorLevel = -1
+
     if registryResponse == 0:
         print("Checks passed!")
+        errorLevel = 0
     else:
         print("Error! Key writing failed!")
-    input("[ Press RETURN to EXIT. . . ]")
+        errorLevel = 1
+    
+    try:
+        if errorLevel == 0:
+            print("The OVR service has to be rebooted for changes to take effect.")
+            rebootChoice = os.system("choice /M \"reboot OVR now\"")
+            if rebootChoice == 1:
+                print("Stopping OVR... This may take a while...")
+                os.system("net stop OVRService")
+                print("Rebooting OVR... This may take a while...")
+                os.system("net start OVRService")
+                print("\nDone!")
+            elif rebootChoice == 2:
+                print("Not rebooting OVR, please either reboot it yourself or restart your system to apply changes.")
+            else:
+                print("Something went wrong with your selection, please either reboot OVR yourself or restart your system to apply changes.")
+    except KeyboardInterrupt:
+        print("Not rebooting OVR, please either reboot it yourself or restart your system to apply changes.")
+
+    input("\n[ Press RETURN to EXIT. . . ]")
 
 # set the window title
 os.system("title Meta Link White Bar Fixer")
