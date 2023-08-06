@@ -3,7 +3,7 @@
 
 ## About
 This app fixes that annoying white bar that appears when using quest link on a meta headset since meta isn't gonna fix it themselves.<br/>
-Note: This bug does not affect air link due to that using a different encoder.
+Note: This app might not be required in all cases, such as when using air link, but fixes the issue when it is present.
 
 ## Download
 ### GitHub (Recommended)
