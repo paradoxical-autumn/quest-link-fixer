@@ -5,6 +5,9 @@
 This app fixes that annoying white bar that appears when using quest link on a meta headset since meta isn't gonna fix it themselves.<br/>
 Note: This app might not be required in all cases, such as when using air link, but fixes the issue when it is present.
 
+### Raw Reg Files
+I also distribute a raw .reg file for the fix, which is a a lot lighter than a full app. However, you will need either reboot OVR yourself or reboot your computer.
+
 ## Download
 ### GitHub (Recommended)
 You can download a release from the [GitHub releases page](https://github.com/paradoxical-autumn/meta-link-fixer/releases)
