@@ -12,5 +12,5 @@ You can download a release from the [GitHub releases page](https://github.com/pa
 ### Building from source
 This is a Python project so compilation *isn't required* but can be done. I use [PyInstaller](https://pypi.org/project/pyinstaller/) with the following command to build the script:
 ```bat
-pyinstaller --clean -F fixer.py -n "Meta Link White Bar Fixer" --uac-admin -i "icon.png"
+pyinstaller --clean -F fixer.py -n "Quest Link White Bar Fixer" --uac-admin -i "icon.png"
 ```
