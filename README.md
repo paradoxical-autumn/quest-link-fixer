@@ -1,4 +1,4 @@
-<h1 align="center">meta-link-fixer</h1>
+<h1 align="center">quest link fixer</h1>
 <p align="center">An app used for fixing the white bar when using Meta Quest Link.</p>
 
 ## About
