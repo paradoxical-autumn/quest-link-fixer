@@ -1,3 +1,8 @@
+>[!NOTE]
+>
+>This repo has been retired in place for [Paradoxical VR Shenanigans](https://github.com/paradoxical-autumn/paradoxical-vr-shenanigans) which has the same functionality.<br>
+>However, downloading the direct .REG files from [here](https://github.com/paradoxical-autumn/quest-link-fixer/releases) is still recommended if you don't want a full app to do the installation.
+
 <h1 align="center">quest link fixer</h1>
 <p align="center">An app used for fixing the white bar when using Meta Quest Link.</p>
 
